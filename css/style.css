@@ -6,10 +6,52 @@ body {
     height: 100%;
     background-color: #FFFCFA;
 }
+nav{
+    margin: 0px; 
+    height: 70px;
+    box-shadow: 0 1px 5px #555;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.menu-bar{
+    height: 70px;
+    line-height: 70px;
+    vertical-align: bottom;
+    margin-left: 50px; 
+    vertical-align: text-bottom;
 
-main {
-    min-height: 70%;
-    text-align: center;
+}
+
+.menu-bar li{
+     font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color: #ececec;
+    opacity: 1;
+    padding-bottom:  0;
+    margin-bottom: 0;
+}
+.topsocial{
+    right: 0;
+    height: 40px;
+    float: right;
+    margin-top: 15px;
+
+}
+.content{
+    height: 400px;
+    margin-top: 10px;
+}
+
+.content h1{
+    font-size: 40px;
+    margin: 0;
+}
+
+.main-content {
+    margin-bottom: 50px;
+    font-family: Palatino;
+    /*margin-top: 64px;*/
+    height: 400px;
 }
 
 #flag {
@@ -67,11 +109,7 @@ main {
     width: 320px;
 }
 
-.main-content {
-    margin-bottom: 50px;
-    font-family: Palatino;
-    margin-top: 64px;
-}
+
 
 .main-content h2 {
     text-align: left;
@@ -80,26 +118,6 @@ main {
     width: 100%;
     font-size: 2.8em;
     color: #000;
-}
-
-#about h2 {
-    border-bottom: solid 3px #e0186f;
-}
-
-#speakers h2 {
-    border-bottom: solid 3px #282727;
-}
-
-#sponsors h2 {
-    border-bottom: solid 3px #009dd9;
-}
-
-#register h2 {
-    border-bottom: solid 3px #a3fb4b;
-}
-
-#venue h2 {
-    border-bottom: solid 3px #e0186f;
 }
 
 .main-content p {
@@ -160,41 +178,6 @@ input {
     margin-bottom: 1em;
 }
 
-.menu-bar {
-    margin-top: 25px;
-    margin-bottom: 70px;
-}
-
-.menu-bar li {
-    margin-right: 30px;
-}
-
-.menu-bar li:nth-of-type(4n+1) :hover {
-    border-bottom: solid 2px #e0186f;
-}
-
-.menu-bar li:nth-of-type(4n+2) :hover {
-    border-bottom: solid 2px #282727;
-}
-
-.menu-bar li:nth-of-type(4n+3) :hover {
-    border-bottom: solid 2px #009dd9;
-}
-
-.menu-bar li:nth-of-type(4n+4) :hover {
-    border-bottom: solid 2px #a3fb4b;
-}
-
-.menu-bar li a {
-    color: #333;
-    font-size: 1.9em;
-    font-family: helvetica;
-}
-
-.menu-bar li a:hover {
-    text-decoration: none;
-}
-
 .row {
     width: 100%;
 }
@@ -247,7 +230,7 @@ a.mouse-top:link {
 }
 
 a.mouse-top:hover {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 #map-canvas {
