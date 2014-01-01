@@ -6,6 +6,8 @@ body {
     height: 100%;
     background-color: #FFFCFA;
 }
+
+/*Navigation Bar styling*/
 nav{
     margin: 0px; 
     height: 70px;
@@ -19,9 +21,7 @@ nav{
     vertical-align: bottom;
     margin-left: 50px; 
     vertical-align: text-bottom;
-
 }
-
 .menu-bar li{
      font-size: 15px;
     font-family: 'Lato', sans-serif;
@@ -35,101 +35,92 @@ nav{
     height: 40px;
     float: right;
     margin-top: 15px;
+}
+
+/*banner styling*/
+
+.banner{
+    background-color: #389dde;
+    text-align: center;
+    height: 500px;
 
 }
 .content{
-    height: 400px;
-    margin-top: 10px;
+    
+    padding-top: 10px;
 }
 
 .content h1{
-    font-size: 40px;
-    margin: 0;
+    font-size: 70px;
+    margin-top:  5%;
+    color: white;
 }
 
+.content span{
+    font-size: 25px;
+}
+
+#notify-me {
+    margin-top: 60px;
+    cursor: pointer;
+    border: 0;
+    background-color: #fff;
+    height: 48px;
+    width: 180px;
+    font-size: 18px;
+    color: #389dde;
+}
+
+#notify-box {   
+    display: none;
+    font-family: Palatino;
+}
+
+#notify-box-wrapper {
+    padding: .7em 1em;
+    margin-bottom: 1em;
+}
+
+/*after banner styling*/
 .main-content {
     margin-bottom: 50px;
     font-family: Palatino;
     /*margin-top: 64px;*/
     height: 400px;
+    z-index: 999;
 }
-
-#flag {
-    margin: 0 auto;
-    position: relative;
-}
-
-#osdconf-logo span {
-    font-family: "League Gothic",Impact,sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-#logo-part1 {
-    color: #e0186f;
-    margin-right: 10px;
-    font-size: 84px;
-}
-
-#logo-part2 {
-    color: #282727;
-    font-size: 84px;
-}
-
-#osdconf-logo #logo-part3 {
-    color: #009dd9;
-    font-size: 48px;
-    margin-right: 10px;
-}
-
-#osdconf-logo #logo-part4 {
-    color: #a3fb4b;
-    font-size: 60px;
-    text-align: center;
-}
-
-#osdc-logo img {
-    width: 180px;
-}
-
-#osdconf-logo {
-    padding-bottom: 15px;
-    border-bottom: 1px solid #ccc;
-}
-
-#date-venue,#coming-soon {
-    color: #e66;
-    font-family: Palatino;
-    font-size: 28px;
-    margin: 10px auto 5px;
-}
-
-#coming-soon {
-    margin-top: 10px;
-    width: 320px;
-}
-
-
-
 .main-content h2 {
     text-align: left;
     display: inline-block;
     padding: 0;
     width: 100%;
     font-size: 2.8em;
-    color: #000;
+    color: #389dde;
 }
 
-.main-content p {
+.halfpara{
     font-size: 20px;
     text-align: center;
     text-align: justify;
     text-justify: newspaper;
+    width: 40%;
+    margin-right: 0;
+    margin-top: 30px;
+}
+
+.fullpara{
+    font-size: 20px;
+    text-align: center;
+    text-align: justify;
+    text-justify: newspaper;
+    margin-right: 0;
+    margin-top: 30px;
 }
 
 .main-content img {
-    width: 68%;
-    margin: 25px;
+    width: 40%;
+    float: right;
+
 }
 
 .main-content h3 {
@@ -137,6 +128,10 @@ nav{
     margin-bottom: 40px;
     font-weight: 700;
     font-size: 160%;
+}
+
+#sponsors{
+    height: 300px;
 }
 
 #speakers p,#sponsors p {
@@ -147,6 +142,28 @@ nav{
     margin-bottom: 70px;
 }
 
+
+/*map decoration*/
+
+#map-canvas {
+    position: relative;
+    width: 40%;
+    /*height: 200px;*/
+    padding-bottom: 50%;
+    /*float: left;*/
+    margin-top: -40px;
+    margin-bottom: 20px;
+    float: right;
+}
+
+#venue h5 {
+    /*float: left;*/
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+/*------------------------------------------*/
 footer {
     text-align: center;
 }
@@ -157,26 +174,7 @@ input {
     padding: 8px;
 }
 
-#notify-me {
-    margin-top: 30px;
-    cursor: pointer;
-    border: 0;
-    background-color: #2B9DC9;
-    height: 48px;
-    width: 180px;
-    font-size: 18px;
-    color: #eFeFeF;
-}
 
-#notify-box {
-    display: none;
-    font-family: Palatino;
-}
-
-#notify-box-wrapper {
-    padding: .7em 1em;
-    margin-bottom: 1em;
-}
 
 .row {
     width: 100%;
@@ -233,27 +231,20 @@ a.mouse-top:hover {
     /*text-decoration: underline;*/
 }
 
-#map-canvas {
-    position: relative;
-    width: 75%;
-    height: 0;
-    padding-bottom: 50%;
-    float: left;
-    margin-top: 40px;
-    margin-bottom: 20px;
+
+
+
+
+
+#date-venue,#coming-soon {
+    color: #e66;
+    font-family: Palatino;
+    font-size: 28px;
+    margin: 10px auto 5px;
 }
 
-#venue h5 {
-    float: left;
-    font-size: 18px;
-    line-height: 1.5;
-    font-weight: 700;
+#coming-soon {
+    margin-top: 10px;
+    width: 320px;
 }
 
-#landmark {
-    float: left;
-    margin-left: 30px;
-    position: relative;
-    top: 13px;
-    font-size: 120%;
-}

@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	var firebase = new Firebase('https://osdconf.firebaseio.com/notifyusers');
 	$('#notify-me').click(function() {
-		$('#notify-box').slideDown();
+		$('#notify-box').slideToggle();
 		var email = $('#notify-email').val();
 
 		if (email.length) {
